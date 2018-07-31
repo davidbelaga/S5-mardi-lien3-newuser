@@ -1,0 +1,14 @@
+<h1 class="titre">New User</h1>
+
+<p>Inscrivez vous en tant que nouvel utilisateur</p>
+
+
+<%= form_for @user, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <p><%= f.text_field :username, placeholder:"username" %></p>
+  <p><%= f.text_field :email, placeholder:"email" %></p>
+  <p><%= f.text_area :bio, placeholder:"bio", size: "60x12" %></p>
+  <p class="btn btn-dark"><%= f.submit "Subscribe new user" %></p>
+<% end %>
+
+
+

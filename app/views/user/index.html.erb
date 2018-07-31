@@ -1,0 +1,7 @@
+<h1 class="titre">Bienvenu! Veux-tu être mon nouvel utilisateur?</h1>
+
+<h2>Les utilisateurs déjà inscrits :</h2>
+
+<% @users.each do |user| %>
+  <p> @<%= user.username %></p>
+<% end %>
